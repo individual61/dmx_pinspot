@@ -82,6 +82,11 @@ class DmxLightPiController:
         def main():
             return jsonify({'status': 'ok'})
 
+        @self.flask_app.route("/rgb/<r>/<g>/<b>")
+        def set_rgbw(r=None, g=None, b=None):
+            self.set_all_fixtures([int(r),int(g),int(b)])
+            return jsonify({'status': 'ok'})
+
         @self.flask_app.route("/wash/white/")
         def wash_white():
             self.set_all_fixtures(self.WHITE)
