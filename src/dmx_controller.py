@@ -23,9 +23,9 @@ class DmxController:
         """Returns the channel IDs of the fixture"""
         start = int((fixture_id * self.fixture_channel_width))
         return {
-            'r': start,
-            'g': start + 1,
-            'b': start + 2,
+            'r': start + 1,
+            'g': start + 2,
+            'b': start + 3,
         }
 
     def _callback_dmx_sent(self, state):
