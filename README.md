@@ -1,5 +1,10 @@
 # DMX Lights
-An example repository of a server for controlling DMX lights with a Raspberry Pi using OLA python bindings.
+Forked from https://github.com/rydercalmdown/dmx_lights
+
+
+Controlling a WKL-BEAM02 RGBW DMX pinspot from a Raspberry Pi with an Enttec Open DMX USB dongle.
+
+Goal: set RGBW values via a simple web interface.
 
 ## Endpoints
 - /wash/random/
